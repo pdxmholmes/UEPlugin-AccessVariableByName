@@ -34,6 +34,6 @@ if [ ${supported} -eq 0 ]; then
 fi
 
 for file in `find ${source_dir} -name "*.uplugin"`; do
-    sed -i -e "s/\"EngineVersion\": \"5.4.0\",/\"EngineVersion\": \"${engine_version}\",/g" ${file}
+    sed -i -e "s/\"EngineVersion\": \"5.5.0\",/\"EngineVersion\": \"${engine_version}\",/g" ${file}
     echo "Replaced engine version in ${file}"
 done
